@@ -17,7 +17,7 @@ int main()
                  c++;
              }
          }
-         else
+         else 
          {
              if(a[i]%2!=0)
              {
@@ -31,6 +31,6 @@ int main()
      }
      else 
      {
-         printf("False");
+          printf("False");
      }
 }
