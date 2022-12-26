@@ -10,7 +10,7 @@ int main()
     }
     int p,q,f=1;
     scanf("%d%d",&p,&q);
-    int max=-10000;
+    int max=a[0];
     for(int i=0; i<n; i++)
     {
         if(a[i]>p&&a[i]<q) 
