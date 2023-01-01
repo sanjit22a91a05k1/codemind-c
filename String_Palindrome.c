@@ -2,7 +2,7 @@
 int main()
 {
     char s[1000000];
-    int l=0,f=1;
+    int l=0,f=0;
     scanf("%s",s);
     for(int i=0; s[i]!=NULL;i++)
     {
@@ -12,16 +12,16 @@ int main()
     {
         if(s[i]!=s[j])
         {
-            f=0;
+            f=1;
             break;
         }
     }
     if(f==1)
     {
-        printf("Palindrome");
+        printf("Not Palindrome");
     }
     else
     {
-        printf("Not Palindrome");
+        printf("Palindrome");
     }
 }
