@@ -1,21 +1,22 @@
-#include<stdio.h>
+# include<stdio.h>
 int main()
 {
-    int t;
-    scanf("%d",&t);
-    for(int i=1;i<=t;i++)
+    int n;
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
     {
         int x,y,a;
         scanf("%d%d%d",&x,&y,&a);
-        if(a>=x&&a<y)
+        if(a>=x && a<y)
         {
             printf("YES
 ");
         }
-        else
+        else 
         {
             printf("NO
 ");
         }
     }
+    
 }
