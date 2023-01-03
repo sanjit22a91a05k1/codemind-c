@@ -1,27 +1,30 @@
+// string palindrome without handiling function
 # include<stdio.h>
+# include<string.h>
 int main()
 {
-    char s[1000000];
-    int l=0,f=0;
-    scanf("%s",s);
-    for(int i=0; s[i]!=NULL;i++)
-    {
-        l++;
-    }
-    for(int i=0,j=l-1;i<j; i++,j--)
-    {
-        if(s[i]!=s[j])
-        {
-            f=1;
-            break;
-        }
-    }
-    if(f==1)
-    {
-        printf("Not Palindrome");
-    }
-    else
-    {
-        printf("Palindrome");
-    }
+	 char s1[50];
+	 scanf("%s",s1);
+	 int i,l=0,c=0;
+	 for( i=0; s1[i]!=NULL;i++)
+	 {
+	    l++;
+	 }
+	 for(int i=0,j=l-1; i<j; i++,j--)
+	 {
+	 	if(s1[i]!=s1[j])
+	 	{
+	 		c++;
+		 }
+	 }
+	 if(c==0)
+	 {
+	 	printf("Palindrome");
+	 }
+	 else 
+	 {
+	 	printf("Not Palindrome ");
+	 }
+	 
+   
 }
