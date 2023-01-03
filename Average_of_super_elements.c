@@ -1,4 +1,4 @@
-# include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int n;
@@ -9,9 +9,9 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    for(int i=0; i<n; i++)
+    for(int i=0;i<n; i++)
     {
-        float c=0;
+        int c=0;
         for(int j=0; j<n; j++)
         {
             if(a[i]==a[j])
@@ -21,24 +21,23 @@ int main()
         }
         if(c==a[i])
         {
-           sum=sum+a[i]; 
-           t++;
-        
-        for(int k=0; k<n; k++)
-        {
-            if(a[i]==a[k])
+            sum=sum+a[i];
+            t++;
+            for(int k=0; k<n; k++)
             {
-                a[k]=-1;
+                if(a[k]==a[i])
+                {
+                    a[k]=0;
+                }
             }
         }
     }
-    }
     if(sum!=0)
     {
-        printf("%.2f",(sum/t));
+        printf("%.2f",sum/t);
     }
-    else 
+    else
     {
-      printf("-1");  
+        printf("-1");
     }
 }
