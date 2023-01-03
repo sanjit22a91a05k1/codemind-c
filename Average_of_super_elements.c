@@ -27,7 +27,7 @@ int main()
             {
                 if(a[k]==a[i])
                 {
-                    a[k]=0;
+                    a[k]=0;//any value you can give 
                 }
             }
         }
