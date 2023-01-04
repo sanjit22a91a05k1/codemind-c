@@ -1,4 +1,4 @@
-# include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int n;
@@ -8,18 +8,24 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n; i++ )
     {
-        for(int j=0;j<n; j++)
+        int c=0;
+        for(int j=0; j<n; j++)
         {
-           if(i!=j)
-           {
-            if(a[i]==a[j])
+            if(i!=j)
             {
-             printf("%d",a[i]);
-             i=n+1;
+               if(a[i]==a[j])
+                {
+                    c++;
+                }
             }
         }
-        }
+         if(c!=0)
+    {
+        printf("%d",a[i]);
+        break;
     }
+    }
+ 
 }
