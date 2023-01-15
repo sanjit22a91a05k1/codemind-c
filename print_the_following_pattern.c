@@ -5,13 +5,16 @@ int main()
     scanf("%d",&n);
     for(int i=1; i<=n; i++)
     {
-        for(int j=n; j>=n-2; j--)
+        for(int j=1; j<=n; j++)
         {
-            printf("%d ",j);
-        }
-        for(int k=n-3; k>=1; k--)
-        {
-            printf("%d ",k);
+            if(i==j)
+            {
+                printf("0");
+            }
+            else 
+            {
+                printf("x");
+            }
         }
         printf("
 ");
