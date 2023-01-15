@@ -9,16 +9,13 @@ int main()
         {
             printf(" ");
         }
-        for(int j=1; j<=n; j++)
+        for(int j=i-1; j>=1;j--)
         {
-            if(i==1 || i==n || j==1 || j==n)
-            {
-                printf("*");
-            }
-            else 
-            {
-                printf(" ");
-            }
+          printf("%d",j);  
+        }
+        for(int l=0; l<=i-1; l++)
+        {
+            printf("%d",l);
         }
         printf("
 ");
