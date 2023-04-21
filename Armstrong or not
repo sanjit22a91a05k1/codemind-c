@@ -1,0 +1,31 @@
+// armstrong number
+# include<stdio.h>
+# include<math.h>
+int main()
+{
+	int n,c=0,r,rem,s=0;
+	scanf("%d",&n);
+	int t=n;
+	int p=n;
+	while(n!=0)
+	{
+		r=n%10;
+		c++;
+		n=n/10;
+     }
+     while(t!=0)
+     {
+     	rem=t%10;
+     	s=s+pow(rem,c);
+     	t=t/10;
+	 }
+	if(s==p)
+	{
+		printf("Armstrong");
+	}
+	else 
+	{
+		printf("Not Armstrong");
+	}
+
+}
