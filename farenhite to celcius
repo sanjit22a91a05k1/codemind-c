@@ -1,0 +1,10 @@
+//farenhite to celcius
+# include<stdio.h>
+int main()
+{
+	float f;
+	scanf("%f",&f);
+	float c=c*5/9+32;
+	printf("%.2f",c);
+	
+}
