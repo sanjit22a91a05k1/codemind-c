@@ -1,0 +1,31 @@
+//Write a C Program to make a simple Calculator to Add, Subtract, Multiply or Divide Using switch�case 
+# include<stdio.h>
+int main()
+{
+	char op;
+printf("Enter The operator which you want\n");
+scanf("%c",&op);
+	float a,b,s;
+	printf("Enter the value of a\n");
+	scanf("%f",&a);
+		printf("Enter the value of b\n");
+	scanf("%f",&b);
+	switch(op)
+	{      
+		case '+': s=a+b;
+		printf("The sum of %.2f and %.2f is %.2f",a,b,s);
+		break;     
+		case'-': s=a-b;
+		printf("The difference of %.2f and %.2f is %.2f",a,b,s);
+		break;                    
+		case '*':s=a*b;
+		printf("The product of %.2f and %.2f is %.2f",a,b,s);
+		break;
+		case '/': s=a/b;
+		printf("The division of %.2f and %.2f is %.2f",a,b,s);   
+		break;
+		default:
+		printf("Invalid Input");
+			}
+		}
+		
