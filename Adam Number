@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+   int sq=n*n;
+   int rev=0;
+   while(n!=0)
+   {
+       int r=n%10;
+       rev=rev*10+r;
+       n=n/10;
+   }
+   int s=rev*rev;
+  
+   int re=0;
+   while(s!=0)
+   {
+       int rem=s%10;
+       re=re*10+rem;
+       s=s/10;
+   }
+   if(sq==re)
+   {
+       printf("True");
+   }
+   else 
+   {
+       printf("False");
+   }
+}
