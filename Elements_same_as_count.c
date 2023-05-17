@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,f=1;
+    int n;
     scanf("%d",&n);
     int a[n];
+    int f=1;
     for(int i=0; i<n; i++)
     {
         scanf("%d",&a[i]);
     }
-    int count=0;
+    
     for(int i=0; i<n; i++)
     {
         int c=0;
@@ -19,22 +20,21 @@ int main()
                 c++;
             }
         }
-        if(a[i]==c)
+        if(c==a[i])
         {
-           printf("%d ",a[i]);
-           f=0;
-           for(int k=0; k<n; k++)
-           {
-               if(a[i]==a[k])
-               {
-                   a[k]=0;
-               }
-           }
+            printf("%d ",a[i]);
+            f=0;
+            for(int k=0; k<n; k++)
+            {
+                if(a[i]==a[k])
+                {
+                    a[k]=0;
+                }
+            }
         }
     }
     if(f==1)
     {
         printf("-1");
     }
- 
 }
