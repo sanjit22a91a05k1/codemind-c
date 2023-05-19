@@ -1,9 +1,11 @@
-# include<stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n,max=0,f=1;;
+    int n;
     scanf("%d",&n);
     int a[n];
+    int max=0;
+    int f=0;
     for(int i=0; i<n; i++)
     {
         scanf("%d",&a[i]);
@@ -11,31 +13,32 @@ int main()
     for(int i=0; i<n; i++)
     {
         int c=0;
-        for(int j=0; j<n; j++)
-        {
+    for(int j=0; j<n; j++)
+      {
             if(i!=j)
+        {
+            if(a[i]==a[j])
             {
-                if(a[i]==a[j])
-                {
-                    c++;
-                }
+                c++;
             }
         }
-       if(c==0)
-       {
-           if(max<a[i])
-           {
-               max=a[i];
-           }
-           f=0;
-       }
+      }
+      if(c==0)
+      {
+          if(a[i]>max)
+          {
+              max=a[i];
+              f=1;
+          }
+      }
+       
     }
     if(f==1)
     {
-        printf("-1");
+    printf("%d",max);
     }
-    else 
+    else
     {
-         printf("%d",max);
+    printf("-1");
     }
 }
