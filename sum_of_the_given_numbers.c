@@ -5,10 +5,9 @@ int main()
     scanf("%d",&n);
     for(int i=1; i<=n; i++)
     {
-        int x,y;
-        scanf("%d %d",&x,&y);
+        int a,b;
+        scanf("%d%d",&a,&b);
         printf("%d
-",x+y);
-        
+",(a+b));
     }
 }
