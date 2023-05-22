@@ -1,0 +1,8 @@
+n,m=map(int,input().split())
+l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+vis = []
+for i in l1:
+    if i in l2 and i not in vis:
+        print(i, end = ' ')
+        vis.append(i)
