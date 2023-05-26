@@ -1,1 +1,0 @@
-# codemind-c
