@@ -1,0 +1,14 @@
+# include<stdio.h>
+# include<math.h>
+int main()
+{
+    float p,t,r;
+    float A,po,m,ci;
+    scanf("%f%f%f",&p,&r,&t);
+    A=(1+(r/100));
+    po=pow(A,t);
+    m=p*po;
+    ci=m-p;
+    
+    printf("%.2f",ci);
+}
