@@ -1,0 +1,27 @@
+# include<stdio.h>
+int main()
+{
+    int n, i,temp;
+    float sum=0, av;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0; i<n; i++)
+    {
+        sum=sum+a[i];
+    }
+      av=sum/n;
+    temp=av;
+    
+    if(temp==av)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
