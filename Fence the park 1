@@ -1,0 +1,13 @@
+# include <stdio.h>
+int main()
+{
+	int L,B,W,C, A1,A2,TC,Af;	
+	scanf("%d%d%d%d", &L,&B,&W,&C);
+	A1=L*B;
+	A2=(L+2*W)*(B+2*W);
+	Af=A2-A1;
+	TC=C*Af;
+	printf("%d",TC);
+	return 0;
+	 
+}
