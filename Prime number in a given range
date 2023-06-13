@@ -1,0 +1,33 @@
+// with argument and without return type function 
+# include<stdio.h>
+void prime(int,int );
+int main()
+{
+	int n,a;
+	scanf("%d%d",&a,&n);
+	
+	prime(a,n);
+
+}
+void prime(int a,int n)
+{
+	int c;
+	for(int i=a; i<=n; i++)
+	{
+		c=0;
+		for (int j=1; j<=i; j++)
+		{
+			if(i%j==0)
+			{
+				c++;
+		}
+			
+		}
+		if(c==2)
+		{
+			printf("%d ",i);
+		}
+		
+	}
+	
+}
