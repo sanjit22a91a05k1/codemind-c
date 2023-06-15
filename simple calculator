@@ -1,0 +1,32 @@
+// simple calculator
+# include<stdio.h>
+int main()
+{
+	char c;
+	printf("Enter the operator which you want\n");
+	scanf("%c",&c);
+	int a,b,s,d,m,di;
+	printf("Enter any two number\n");
+	scanf("%d%d",&a,&b);
+	switch(c)
+	{
+		case '+':
+		 s=a+b;
+		printf("The sum of two number is %d",s);
+		break;
+		case '-':
+		 d=a-b;
+		printf("The difference  of two number is %d",d);
+		break;
+		case '*':
+		 m=a*b;
+		printf("The multiplication of two number is %d",m);
+		break;
+		case '/':
+		 di=a/b;
+		printf("The division of two number is %d",di);
+		break;
+		default:
+		printf("Invalid operator\n");	
+	}
+}
