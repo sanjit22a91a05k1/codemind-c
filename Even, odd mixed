@@ -1,0 +1,32 @@
+# include<stdio.h>
+int main()
+{
+    int n,r,e=0,o=0,c=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        c++;
+    if(r%2==0)
+    {
+        e++;
+    }
+    else if(r%2!=0)
+    {
+        o++;
+    }
+    n=n/10;
+}
+    if(c==e)
+    {
+    	printf("Even");
+	}
+	else if(c==o)
+	{
+		printf("odd");
+	}
+	else 
+	{
+		printf("Mixed");
+	}
+}
