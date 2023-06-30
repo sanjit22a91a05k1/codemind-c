@@ -1,0 +1,10 @@
+# include <stdio.h>
+int main()
+{
+	int r;
+	float A;
+	scanf("%d",&r);
+	A=3.14*r*r;
+	printf("%f",A);
+	return 0;
+}
