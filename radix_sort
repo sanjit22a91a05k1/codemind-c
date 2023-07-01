@@ -1,0 +1,59 @@
+#include<stdio.h>
+int get_max(int a[],int n)
+{
+	int max=0,i;
+	for(i=0;i<n;i++)
+	{
+		if(max<a[i])
+		max=a[i];
+	}
+	return max;
+}
+void countsort(int a[],int n)
+{
+	int max_val=get_max(a,n);
+	max_val++;
+	int frq[100]={0},i;
+	for(i=0;i<n;i++)
+	{
+		frq[a[i]]++;
+	}
+	for(i=1;i<100;i++)
+	{
+		frq[i]=frq[i]+frq[i-1];
+	}
+	int b[n];
+	for(i=n-1;i>=0;i--)
+	{
+		frq[a[i]]--;
+		b[frq[a[i]]]=a[i];
+	}
+	for(i=0;i<n;i++)
+	{
+		a[i]=b[i];
+	}
+}
+void radixsort(int a[],int n)
+{
+	int max_val=get_max(a,n);
+	int place=1,i;
+	for(i=place;max_val/i>0;i*=10)
+	{
+		countsort(a,n);
+	}
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int a[n],i;
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	radixsort(a,n);
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",a[i]);
+	}
+}
