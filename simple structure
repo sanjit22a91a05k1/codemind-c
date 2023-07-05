@@ -1,0 +1,11 @@
+#include<stdio.h>
+struct student{
+	int roll;
+	char name[20];
+	float percent;
+};
+int main()
+{
+	struct student s1=(123,"aabbccdd",99.99);
+	printf("%d %s %.2f",s1.roll.s1.name,s1.percent);
+}
