@@ -1,0 +1,35 @@
+# include<stdio.h>
+void TakeInput(){
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+    #endif
+}
+void rev_arr(int l,int r,int *a)
+{
+  if(l>r)
+ return;
+ int temp=a[l];
+ a[l]=a[r];
+ a[r]=temp;
+ rev_arr(l+1,r-1,a);
+}
+int main()
+{
+ TakeInput();
+    int n;
+    scanf("%d",&n);
+    int l=0;
+    int r=n-1;
+    int a[n];
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+     rev_arr(l,r,a);
+     for(int i=0; i<n; i++)
+     {
+     printf("%d ",a[i]);
+     }
+
+}
