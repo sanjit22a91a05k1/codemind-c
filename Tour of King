@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+    {
+        int n,m;
+        scanf("%d%d",&n,&m);
+        int a=5*n+m*7;
+        printf("%d\n",a);
+    }
+}
