@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    long long t,n,j,i,c=0;
+   scanf("%lld", &t);
+    for(i=0; i<t; i++)
+    {
+      scanf("%lld\n", &n);
+        j=n;
+        while(j!=0)
+        {
+            if(j%10==0)
+            {
+                j=j/10;
+                continue;
+            }
+            if(n%(j%10)==0)
+            {
+               c++;
+            }
+            j= j/10;
+        }
+        printf("%lld\n",c);
+        c=0;
+    }
+        
+    return 0;
+}
