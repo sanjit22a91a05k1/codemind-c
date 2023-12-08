@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ 
+  cout << 12+ 7; //Replace the _ with correct digits
+
+  return 0;
+}
